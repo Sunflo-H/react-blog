@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import  {useState}  from 'react';
+
 import './App.css';
 
 function App() {
+  
+  let [글제목,b] = useState(['구의동 맛집','강남 맛집','부산 맛집']);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          안녕하세요
-        </a>
-      </header>
+      <div className="black-nav">
+        <div>개발 Blog</div>
+      </div>
+      <div className='list'>
+        <h3> { 글제목[0] } </h3>
+        <p>1월 5일 발행</p>
+        <hr/>
+      </div>
+      <div className='list'>
+        <h3> { 글제목[1] } </h3>
+        <p>1월 5일 발행</p>
+        <hr/>
+      </div>
+      <div className='list'>
+        <h3> { 글제목[2] } </h3>
+        <p>1월 5일 발행</p>
+        <hr/>
+      </div>
     </div>
   );
 }
