@@ -5,7 +5,10 @@
 body {
   font-family: 'nanumsquare';
 }
-
+.modal {
+  padding: 20px;
+  background-color: #eee;
+}
 .list {
   margin-top: 30px;
   list-style-type: none;
